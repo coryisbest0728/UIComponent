@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "*",
+                "src/*",
+                "tests/*",
+                "node_modules/xmlparser/src/*",
+                "node_modules/traversal/src/*"
+            ]
+        },
+        "rootDirs": [
+            "./src",
+            "./tests"
+        ],
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "module": "commonjs",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": true,
+        "declarationDir": "../@types/cory/components/",
+        "types": [
+            "node",
+            "core-js",
+            "jasmine"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "./tests/**/*"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    }
+}

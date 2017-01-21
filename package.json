@@ -1,0 +1,62 @@
+{
+  "name": "uicomponent",
+  "version": "0.0.1",
+  "description": "The UI Component",
+  "main": "index.js",
+  "scripts": {
+    "release": "webpack",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryisbest0728/UIComponent.git"
+  },
+  "keywords": [
+    "ui",
+    "component",
+    "element",
+    "virtual dom"
+  ],
+  "author": "Cory",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coryisbest0728/UIComponent/issues"
+  },
+  "homepage": "https://github.com/coryisbest0728/UIComponent#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.38",
+    "@types/node": "0.0.2",
+    "autoprefixer": "^6.5.3",
+    "clean-webpack-plugin": "^0.1.14",
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-htmlfile-reporter": "^0.3.4",
+    "karma-jasmine": "^1.0.2",
+    "karma-requirejs": "^1.1.0",
+    "karma-typescript-preprocessor2": "^1.2.1",
+    "karma-webpack": "^1.8.0",
+    "postcss-import": "^9.0.0",
+    "precss": "^1.4.0",
+    "requirejs": "^2.3.2",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.3.3",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/log4js": "0.0.32",
+    "@types/reflect-metadata": "0.0.5",
+    "@types/uuid": "^2.0.29",
+    "core-js": "^2.4.1",
+    "log4js": "^1.0.1",
+    "reflect-metadata": "^0.1.8",
+    "traversal": "git+https://github.com/coryisbest0728/Traversal.git",
+    "uuid": "^3.0.1",
+    "xmlparser": "git+https://github.com/coryisbest0728/XMLParser.git"
+  }
+}
