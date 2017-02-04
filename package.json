@@ -49,10 +49,12 @@
   },
   "dependencies": {
     "@types/core-js": "^0.9.35",
+    "@types/eventemitter3": "^1.2.0",
     "@types/log4js": "0.0.32",
     "@types/reflect-metadata": "0.0.5",
     "@types/uuid": "^2.0.29",
     "core-js": "^2.4.1",
+    "eventemitter3": "^2.0.2",
     "log4js": "^1.0.1",
     "reflect-metadata": "^0.1.8",
     "traversal": "git+https://github.com/coryisbest0728/Traversal.git",
