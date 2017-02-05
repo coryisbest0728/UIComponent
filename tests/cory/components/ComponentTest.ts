@@ -5,11 +5,21 @@
  */
 
 import { UIComponent } from 'cory/components/UIComponent';
+import { IComponent } from 'cory/components/IComponent';
 
 describe('Component testing', (): void => {
 
-    it('ui component', (): void => {
-        console.log(new AComponent().getId());
+    it('ui component id', (done: DoneFn): void => {
+        let aComponent: IComponent = new AComponent();
+        expect(aComponent.getId()).not.toBeNull('The component id should be exist.');
+        aComponent.on('ready', done);
+    });
+
+    it('ui component lifecycle', (done: DoneFn): void => {
+        let aComponent: IComponent = new AComponent();
+        aComponent.on('ready', (): void => {
+            done();
+        });
     });
 });
 

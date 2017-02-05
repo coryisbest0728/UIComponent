@@ -53,12 +53,15 @@
     "@types/log4js": "0.0.32",
     "@types/reflect-metadata": "0.0.5",
     "@types/uuid": "^2.0.29",
+    "@types/velocity-animate": "^1.2.29",
     "core-js": "^2.4.1",
-    "eventemitter3": "^2.0.2",
+    "eventemitter3": "^1.2.0",
     "log4js": "^1.0.1",
+    "maquette": "^2.4.2",
     "reflect-metadata": "^0.1.8",
     "traversal": "git+https://github.com/coryisbest0728/Traversal.git",
     "uuid": "^3.0.1",
+    "velocity-animate": "^1.4.2",
     "xmlparser": "git+https://github.com/coryisbest0728/XMLParser.git"
   }
 }

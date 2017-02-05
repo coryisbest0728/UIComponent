@@ -5,8 +5,9 @@
  */
 
 import { ILifecycle } from 'cory/components/ILifecycle';
+import { IEventDispatcher } from 'cory/events/IEventDispatcher';
 
-export interface IComponent extends ILifecycle {
+export interface IComponent extends ILifecycle, IEventDispatcher {
 
     /**
      * The unique id of the component.

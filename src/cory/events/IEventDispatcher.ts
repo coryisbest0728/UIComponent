@@ -19,7 +19,7 @@ export interface IEventDispatcher {
      * Return a list of assigned event listeners.
      *
      * @param {string} eventType The events that should be listed.
-     * @return {Array}
+     * @return {Function[]}
      */
     listeners(eventType: string): Function[];
 

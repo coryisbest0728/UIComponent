@@ -30,8 +30,8 @@ export class EventDispatcher implements IEventDispatcher {
         return this.eventEmitter.listeners(eventType);
     }
 
-    public emit(eventType: string, ...args): boolean {
-        return this.eventEmitter.emit(eventType, ...args);
+    public emit(eventType: string, ...args: any[]): boolean {
+        return this.eventEmitter.emit(eventType, args);
     }
 
     public once(eventType: string, handler: Function, context?: any): IEventDispatcher {

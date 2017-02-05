@@ -4,6 +4,7 @@
  * @author Cory(https://github.com/coryisbest0728)
  */
 
+import { VDOM } from 'cory/virtualdom/VDOM';
 
 export interface ILifecycle {
 
@@ -14,9 +15,10 @@ export interface ILifecycle {
 
     /**
      * Renders this component.
-     * @return {Promise}
+     * When has beed rendered, it will return the virtual dom.
+     * @return {Promise<VDOM>}
      */
-    render(): Promise;
+    render(): Promise<VDOM>;
 
     /**
      * Setups this component.

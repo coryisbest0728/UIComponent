@@ -4,7 +4,7 @@
  * @author Cory(https://github.com/coryisbest0728)
  */
 
-import { IComponent } from 'cory/components/IComponent';
+import { IContainer } from 'cory/components/IContainer';
 
 export interface IContained {
 
@@ -12,5 +12,5 @@ export interface IContained {
      * Gets the parent of this contained.
      * @return { IComponent }
      */
-    getParent(): IComponent;
+    getParent(): IContainer;
 }
