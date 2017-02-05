@@ -115,13 +115,16 @@ export abstract class UIComponent extends EventDispatcher implements IComponent,
      */
     public render(): Promise<VDOM> {
         let self: UIComponent = this;
-        return this.getParser().parse(this.getTemplate()).then((doc: Document): void => {
-            if (doc.childNodes.length === 1) { // the doc only has 1 child.
-                self.getTraversal().traversal(<Element>doc.firstChild, new UIComponentElementVisitor());
-            } else {
-                throw new Error(`
-                    The template must have one root node. The error template is \"${this.getTemplate()}\"`);
-            }
+        return new Promise<VDOM>((resolve: (value?: VDOM | PromiseLike<VDOM>) => void): void => {
+            self.getParser().parse(this.getTemplate()).then((doc: Document): void => {
+                // if (doc.childNodes.length === 1) { // the doc only has 1 child.
+                //     self.getTraversal().traversal(<Element>doc.firstChild, new UIComponentElementVisitor());
+                // } else {
+                //     throw new Error(`
+                //         The template must have one root node. The error template is \"${this.getTemplate()}\"`);
+                // }
+                resolve();
+            });
         });
     }
 
